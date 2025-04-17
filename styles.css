@@ -1,0 +1,317 @@
+
+/*  * C’est le sélecteur universel en CSS. Il cible tous les éléments de la page.*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     font-family: 'popins', sans-serif; /* définit la police de caractères à utiliser pour le texte, ici c'est popins si ya pas il utilise sans relif */
+    scroll-behavior: smooth; /* le défilement sera doux et animé, plutôt que instantané. */
+}
+
+p{
+    color: black;
+}
+
+header{
+     position: fixed; /* pour garder l'en-tete fixe meme lorsqu'on defile la page*/
+    top: 0%;            /*Place la barre tout en haut de la page  */
+    left: 0%;    /*Place la barre tout a gauche de la page  */
+    padding: 20px 10px;            /* Ajoute de l'espace à l'intérieur de la barre de 20 pixels.*/
+    width: 100%;                                        /* Fait en sorte que la barre prenne toute la largeur de la page. */
+     z-index: 1;     /* Assure que la barre est au-dessus d'autres éléments. */
+    display: flex;        
+    justify-content: space-evenly;        /*  */
+    align-items: center;      /*Centre les éléments verticalement.*/
+    background-color: white;
+}
+
+.logo{
+    color: black;
+    font-weight: bold;                          /* Rend le texte en gras.*/
+    font-size: 2em;                    /*Augmente la taille du texte à deux fois la taille normale.*/
+    text-decoration: none;
+    font-family: 'Kenia', sans-serif;
+}
+
+.logo span{
+    color: rgb(187, 115, 21);
+    font-family: 'Kenia', sans-serif;
+}
+   
+
+.naviguer{
+    display: flex;
+    position: relative;
+}
+.naviguer li{
+    list-style: none;  /* Supprime les points devant les liens textuels*/
+}
+.naviguer a{
+    color: black;
+    text-decoration: none;   /* Supprime les soulignements des liens textuels*/
+    margin-left: 30px;
+    font-weight: 1000;    /* Définit l'épaisseur de la police en gras.*/
+}
+
+.reservation{
+    padding: 10px 20px;
+    background-color: #fb911f;
+    margin-top: -10px;
+}
+.reservation:hover{                  /*Change la couleur de fond des éléments "reservation" en orange quand on survole avec la souris.*/
+    background-color: #d87710;
+    transition: ease-out;           /*Rend le changement d'aspect (comme la couleur de fond) plus fluide et naturel lorsqu'on survole.*/
+}
+
+header .naviguer li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;   /* Ajoute une ligne en bas de l'élément avec une couleur orange.*/
+}
+
+.banieres{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   /* Centre les éléments horizontalement*/
+    align-items: center;               /* Centre les éléments verticalement*/
+    background-image: url(images/gif.gif);
+    opacity: 0.8;
+}
+
+.banieres, .baniere{
+    text-align: center;
+
+}
+.banieres .baniere h2{
+    color:white;
+    font-size: 3em;           /*Fixe la taille de la police à 3 fois la taille de la police de base.*/
+}
+
+.baniere p{
+    color: black;
+    font-size: 1.2em;
+}
+
+.btn1,.btn2{
+    font-size: 1em;
+    color: white;
+
+    padding: 10px 20px;         /* Ajoute un espace de 10 pixels en haut et en bas, et 20 pixels à gauche et à droite à l'intérieur de */
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;     /* Supprime la décoration de texte, comme les soulignements.*/
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn1{
+    background-color: #fb911f;
+}
+
+.btn2{
+    background-color: #2a4963;
+}       
+
+
+.btn1:hover , .btn2:hover{
+    letter-spacing: 5px;
+}
+
+
+.titre-text{
+    color: black;
+    font-size: 2em;
+    font-weight: 500px;
+
+}
+.titre-text .span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+}
+
+.menu{
+    margin-top: auto;
+}
+.menu .titre p{
+    font-size: 1.5em;
+    text-align: center;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: top 40px;
+}
+
+.boite{
+    width: 395px;
+    margin: 20px;
+    border: 20px solid white;
+    box-shadow: 20px 15px 35px rgb(0, 0, 0.8);
+}
+
+.imboite{
+    position: relative;
+    width: 100%;
+    height: 330px;
+}
+.imboite img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text{
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
+.text h3{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.avis{
+    background-image: url(images/avis1.jpg);
+    background-size: cover;
+    padding: 40px;
+}
+.contenu{
+    display: flex;
+    margin-top:40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.boite{
+    width: 350px;
+    margin: 20px;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+.imboite1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.titre-text{
+    color: black;
+    text-align: center;
+    margin: 50px;
+    font-size: 3em;
+}
+.text{
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+.text h4{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fb911f;
+}
+
+.blanc .titre-text{
+    color: white;
+}
+
+
+.contact{
+    background-image: url(images/ggg.avif);
+    background-size: cover;
+    box-shadow: 2px 2px 12px black;
+    width: 100%;
+    background-position: unset;
+}
+.contact p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-block-end: 20px;
+}
+.contactform{
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 5px 15px 50px;
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-inline-start: 200px;
+}
+.contactform h3{
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 100px;
+}
+
+.inputbox input,.inputbox textarea {
+    width: 100%; 
+    border: 1px solid #555;  /*autour des  champs de saisie */
+    padding: 10px; 
+    color: #111; 
+    outline: none; /* Suppression du contour de focus */
+    font-size: 16px; 
+    font-weight: 300; 
+    resize: none; /* Désactivation du redimensionnement */
+}
+
+
+.inputbox input[type="submit"] {
+    font: 700 1em sans-serif; 
+    color: #fff; 
+    background: #fb911f; /* Couleur de fond */
+    letter-spacing: 2px; 
+    transition: background-color 0.5s; 
+    max-width: 120px; /* Largeur maximale */
+}
+
+
+
+.copyright{
+    padding: 20px40px;
+    border-top: 2px black;
+    background: rgb(228, 222, 222);
+    text-align: center;
+}
+
+
